@@ -2,6 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 
 from resume.forms import ContactForm
+from django.contrib.auth.views import login
 
 
 def index(request):
@@ -22,3 +23,9 @@ def contact_me(request):
             context['form_success'] = True
     context['form'] = form
     return render(request, 'resume/contact_me.html', context)
+
+
+def my_login(request, *args, **kwargs):
+    if request.method == 'POST' and not request.POST.get('remember', None):
+        request.session.set_expiry(0)
+    return login(request, *args, **kwargs)

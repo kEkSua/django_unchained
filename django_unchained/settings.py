@@ -27,7 +27,7 @@ SECRET_KEY = '7a$cr!ue*=l+z7)ed5x@@q@pb+$^=z=73_1r*12qkw-0#@f@cv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', 'keksua.pythonanywhere.com']
+ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'keksua.pythonanywhere.com']
 
 
 # Application definition

@@ -23,5 +23,6 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     path('admin/', admin.site.urls),
     path('contact_me/', views.contact_me, name='contact_me'),
+    path('accounts/login/', views.my_login, name='login'),
     path('accounts/', include('registration.backends.simple.urls')),
 ]
