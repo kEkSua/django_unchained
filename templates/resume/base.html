@@ -6,16 +6,27 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="icon" href="{% static 'images/favicon.ico' %}">
-        <link href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="http://v4-alpha.getbootstrap.com/examples/dashboard/dashboard.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
         <title>{% block title_block %}{% endblock %}</title>
     </head>
 
     <body>
-        <div class="container-fluid">
-            <div class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
-                {% block body_block %}{% endblock %}
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="{% url 'index' %}">Home</a>
             </div>
+            <ul class="nav navbar-nav ml-auto">
+                {% if user.is_authenticated %}
+                <li><a class="nav-link" href="{% url 'auth_logout' %}?next=/">Logout</a></li>
+                {% else %}
+                <li><a class="nav-link" href="{% url 'auth_login' %}">Login</a></li>
+                <li><a class="nav-link" href="{% url 'registration_register' %}">Sign Up</a></li>
+                {% endif %}
+                <li><a class="nav-link" href="{% url 'contact_me' %}">Contact me</a></li>
+            </ul>
+        </nav>
+        <div class="container-fluid">
+                {% block body_block %}{% endblock %}
         </div>
 
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>

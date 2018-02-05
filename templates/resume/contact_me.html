@@ -1,0 +1,146 @@
+{% extends 'resume/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}Contact me!{% endblock %}
+
+{% block body_block %}
+    <link rel='stylesheet' id='jquery-magnificpopup-uabb-css'  href='https://templates.ultimatebeaver.com/wp-content/plugins/bb-ultimate-addon/assets/css/global-styles/jquery.magnificpopup.css?ver=4.9.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='ultimate-icons-css'  href='https://templates.ultimatebeaver.com/wp-content/uploads/bb-plugin/icons/ultimate-icons/style.css?ver=2.0-alpha.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='fl-builder-layout-13693-css'  href='https://templates.ultimatebeaver.com/wp-content/uploads/bb-plugin/cache/13693-layout.css?ver=6e1deff02a837bd0fec6583fe2bc5cf0' type='text/css' media='all' />
+
+<div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-5885d4292be82 fl-row-bg-overlay" data-node="5885d4292be82">
+	<div class="fl-row-content-wrap">
+				<div class="fl-row-content fl-row-fixed-width fl-node-content">
+
+<div class="fl-col-group fl-node-5885d4292bebd" data-node="5885d4292bebd">
+			<div class="fl-col fl-node-5885d4292bef9" data-node="5885d4292bef9">
+    <div class="fl-col-content fl-node-content">
+    <div class="fl-module fl-module-spacer-gap fl-node-5885d4292c3b2" data-node="5885d4292c3b2" data-animation-delay="0.0">
+    <div class="fl-module-content fl-node-content">
+            <div class="uabb-module-content uabb-spacer-gap-preview uabb-spacer-gap">
+</div>	</div>
+</div>
+<div class="fl-module fl-module-info-box fl-node-5885d4292bf34" data-node="5885d4292bf34" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="uabb-module-content uabb-infobox infobox-center infobox-responsive-center ">
+    <div class="uabb-infobox-left-right-wrap">
+    <div class="uabb-infobox-content">
+			<div class='uabb-infobox-title-wrap'><h5 class="uabb-infobox-title-prefix">Feel free to</h5><h3
+                    class="uabb-infobox-title">SEND ME A MESSAGE</h3></div><div class="uabb-infobox-separator"><div
+            class="uabb-module-content uabb-separator-parent"><div class="uabb-separator"></div>
+</div></div>		</div>	</div>
+</div>	</div>
+</div>
+    </div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-5885d4292bf6f" data-node="5885d4292bf6f">
+			<div class="fl-col fl-node-5885d4292bfab fl-col-small" data-node="5885d4292bfab">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-uabb-heading fl-node-5885d4292c064" data-node="5885d4292c064" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="uabb-module-content uabb-heading-wrapper uabb-heading-align-left ">
+
+
+	<h2 class="uabb-heading">
+				<span class="uabb-heading-text">Getting in touch is easy!</span>
+			</h2>
+
+
+		<div class="uabb-subheading uabb-text-editor">
+		<p>You can leave me a message<br />directly with this form</p><p> </p><p>Or send an email:</p><p> </p><p>alex.triphonov@gmail.com</p>	</div>
+
+	</div>	</div>
+</div>
+<div class="fl-module fl-module-advanced-icon fl-node-5885d4292c09f" data-node="5885d4292c09f" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="uabb-module-content adv-icon-wrap adv-icon-horizontal adv-icon-left">
+<a class="adv-icon-link adv-icon-1" href="https://www.linkedin.com/in/alex-triphonov-5a813252/" target="_self"><div class="uabb-module-content uabb-imgicon-wrap">				<span class="uabb-icon-wrap">
+			<span class="uabb-icon">
+				<i class="ua-icon ua-icon-linkedin2"></i>
+			</span>
+		</span>
+
+		</div></a><a class="adv-icon-link adv-icon-2" href="https://www.facebook.com/profile.php?id=100006382061953" target="_self"><div class="uabb-module-content uabb-imgicon-wrap">				<span class="uabb-icon-wrap">
+			<span class="uabb-icon">
+				<i class="ua-icon ua-icon-facebook22"></i>
+			</span>
+		</span>
+
+		</div></a><a class="adv-icon-link adv-icon-4" href="https://plus.google.com/116758636018432966150" target="_self"><div class="uabb-module-content uabb-imgicon-wrap">				<span class="uabb-icon-wrap">
+			<span class="uabb-icon">
+				<i class="ua-icon ua-icon-google"></i>
+			</span>
+		</span>
+
+		</div></a></div>	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-5885d4292bfe1 fl-col-small" data-node="5885d4292bfe1">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-uabb-contact-form fl-node-5885d4292c028" data-node="5885d4292c028" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+
+<form class="uabb-module-content uabb-contact-form uabb-form-style1" method="post" action=".">
+    {% csrf_token %}
+  	<div class="uabb-input-group-wrap">
+		<div class="uabb-input-group uabb-name ">
+				<div class="uabb-form-outter">
+			<input type="text" name="contact_name" value=""  placeholder="Your Name" />
+		</div>
+	</div>
+
+		<div class="uabb-input-group uabb-email ">
+				<div class="uabb-form-outter">
+			<input type="email" name="contact_email" value="" placeholder="Your Email"/>
+		</div>
+	</div>
+
+
+		<div class="uabb-input-group uabb-message ">
+				<div class="uabb-form-outter-textarea">
+			<textarea name="contact_content" placeholder="Send me a message"></textarea>
+			<div class="uabb-form-error-message uabb-form-error-message-required"></div>
+{##}
+		</div>
+
+	</div>
+		</div>
+
+	<div class="uabb-submit-btn">
+        <button type="submit" class="uabb-contact-form-submit">
+		<span>SEND MESSAGE</span></button>
+	</div>
+    {% if form_success %}
+		<span class="uabb-success-none">Message Sent!</span>
+    {% endif %}
+    {% if form.errors %}
+	<span class="uabb-send-error"> Message failed. Please try again.</span>
+    {% endif %}
+</form>
+
+
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-5885d4292c3ef" data-node="5885d4292c3ef">
+			<div class="fl-col fl-node-5885d4292c42a" data-node="5885d4292c42a">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-spacer-gap fl-node-5885d4292c2c4" data-node="5885d4292c2c4" data-animation-delay="0.0">
+	<div class="fl-module-content fl-node-content">
+		<div class="uabb-module-content uabb-spacer-gap-preview uabb-spacer-gap">
+</div>	</div>
+</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
