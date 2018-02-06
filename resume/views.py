@@ -9,8 +9,9 @@ def index(request):
     return render(request, 'resume/index.html')
 
 
-def about(request):
-    return render(request, 'resume/about.html')
+@login_required
+def inner_page(request):
+    return render(request, 'resume/inner_page.html')
 
 
 def contact_me(request):
